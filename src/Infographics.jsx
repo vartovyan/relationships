@@ -12,21 +12,23 @@ const fadeIn = {
   transition: { duration: 1.2, ease: 'easeOut' },
 };
 
+const base = import.meta.env.BASE_URL;
+
 export const TitleVisual = () => (
   <div className="hero-image-wrapper">
-    <motion.img {...fadeIn} className="hero-image" src="/images/watercolor_mind.png" alt="The Relational Mind" />
+    <motion.img {...fadeIn} className="hero-image" src={`${base}images/watercolor_mind.png`} alt="The Relational Mind" />
   </div>
 );
 
 export const HealingVisual = () => (
   <div className="hero-image-wrapper">
-    <motion.img {...fadeIn} className="hero-image" src="/images/watercolor_healing.png" alt="Healing Through Relationships" />
+    <motion.img {...fadeIn} className="hero-image" src={`${base}images/watercolor_healing.png`} alt="Healing Through Relationships" />
   </div>
 );
 
 export const ConnectionVisual = () => (
   <div className="hero-image-wrapper">
-    <motion.img {...fadeIn} className="hero-image" src="/images/watercolor_connection.png" alt="Human Connection" />
+    <motion.img {...fadeIn} className="hero-image" src={`${base}images/watercolor_connection.png`} alt="Human Connection" />
   </div>
 );
 
